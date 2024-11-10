@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Battle</title>
+    <link rel="stylesheet" href="../inicio/style.css">
+</head>
+<body>
+    <header>
+        <img src="../inicio/img/pokemon.png" class="tituloPokemon">
+        <img src="https://cdn.pixabay.com/photo/2016/07/21/00/38/pokemon-1531648__340.png" class="menu-icon" id="menuIcon" alt="Icono de menú">
+    </header>
+    
+    <main>
+        <section class="container">
+            <h2>SIMULADOR POKÉMON</h2>
+            <img src="../inicio/img/descarga.jpg" alt="Imagen de Pokémon" class="pokemon-image">
+            <button class="btn" id="btnPokedex">Pokédex</button>
+            <button class="btn" id="btnEmpezar">Empezar</button>
+            <hr>
+            <div>
+                <p class="container__start--footer">
+                    <small style="font-weight: bold;">
+                    Para más información y noticias sobre Pokémon pincha aquí.
+                    <a href="https://pokemongolive.com/es/news/"><img src="https://cdn.pixabay.com/photo/2016/07/21/00/38/pokemon-1531648__340.png" width="15" class="pulse"></a>
+                    </small>
+                </p>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Menu Desplegable -->
+    <aside class="sidebar" id="sidebar">
+        <h3>¡Bienvenido al Mundo Pokémon!</h3>
+        <img src="../inicio/img/3pokemons.jpg" class="sidebar-image" alt="Imagen Pokémon">
+        <p style="font-weight: bold;">Elije tu Pokémon Inicial</p>
+        <select id="pokemonSelect" class="opciones">
+            <option value="Squirtle">Squirtle</option>
+            <option value="Charmander">Charmander</option>
+            <option value="Bulbasaur">Bulbasaur</option>
+        </select>
+        <button id="submitAnswer" class="btnEnviar">Enviar</button>
+    </aside>
+
+    <!-- Modal Personalizado Alert -->
+    <div class="custom-alert" id="customAlert">
+        <div class="custom-alert-content">
+            <h3>Elección Pokémon</h3>
+            <p id="pokemonMessage"></p>
+            <img class="imagenEleccion" id="pokemonImage" src="" alt="Imagen de Pokémon" style="width: 100px; height: auto; display: none;">
+            <button id="closeAlert" class="btn">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="../inicio/index.js"></script>
+</body>
+</html>

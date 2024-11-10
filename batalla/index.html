@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../batalla/style.css">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 799px)">
+
+    <title>Pokemon Battle Simulator</title>
+</head>
+<body>
+
+    <div class="header">
+        <img src="../batalla/img/pokemon.png" alt="Pokemon Battle" class="header-image">
+    </div>
+
+    <div class="box" id="box">
+
+        <img class="pokemon J hidden" id="pokemon-J" src="" alt="">
+        <img class="pokemon M hidden" id="pokemon-M" src="" alt="">
+
+        <div class="dialogo M"><p class="span-dialog" id="span-dialogM"></p></div>
+        <div class="dialogo J"><p id="span-dialogJ"></p></div>
+
+        <div class="stats-box stats-J">
+
+            <span class="name" id="name-J"></span>
+
+            <meter class="hp-bar" id="hp-bar__J" min='0'></meter>
+
+            <div class="hp-container">
+                <span class="hp" id="hp">53</span> / <span class="currency-hp" id="currency-hp">53</span>
+            </div>
+        </div>
+
+        <div class="stats-box stats-M">
+
+            <span class="name" id="name-M"></span>
+
+            <meter class="hp-bar" id="hp-bar__M" min='0'></meter>
+        </div>
+    </div>
+    
+    <!-- Reglas Juego -->
+    <div class="reglas">
+        <h2 style="margin-top: 1rem;">Reglas y explicación del juego.</h2>
+        <br>
+        <p>1º. Elegir el pokémon con el que deseas luchar.</p>
+        <p>2º. Elegir el pokémon contra el que deseas luchar.</p>
+        <p>3º. Pulsar en "Comenzar".</p>
+        <p>4º. Para atacar al enemigo, haz clic en tu oponente para hacerle daño.</p>
+        <br>
+        <h4 class="aviso">*MUY IMPORTANTE* Tener en cuenta el tipo de cada Pokémon para realizar o recibir daño.</h4>
+    </div>
+    
+    <!-- Seleccion Pokemons -->
+    <div class="elegir">
+        <h3>Elige los Pokémons</h3>
+    </div>
+
+    <div class="list-container">
+        <!-- Elegir Pokemon Jugador -->
+        <select class="pokemon-list" id="pokemonJ-list" required>
+            <option>-Pokemon Jugador-</option>
+        </select>
+        
+        <!-- Elegir Pokemon Maquina -->
+        <select class="pokemon-list" id="pokemonM-list" required>
+            <option>-Pokemon Maquina-</option>
+        </select>
+    </div>
+    
+    <!-- Iniciar Batalla -->
+    <button class="list-button" id="list-button">Comenzar</button>
+    
+    <!-- Volver Menu Principal -->
+    <button class="list-button" id="volverMenu">Volver al Menú</button>
+
+    <script src="../batalla/index.js"></script>
+</body>
+</html>
+
